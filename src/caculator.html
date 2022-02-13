@@ -1,2 +1,57 @@
-test
-test
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+
+      body{
+        background-color: #000000;
+      }
+
+      label {
+        display: block;
+        font: 1rem 'Fira Sans', sans-serif;
+      }
+
+      input,
+      label {
+        height: 1.7em;
+        margin: .4rem 0;
+      }
+      select {
+        width: 50px;
+        height: 2em;
+        font-size: .9rem;
+        padding: 2px 5px;
+      }
+
+      .caculator{
+        border: 10px #FFFFFF solid;
+        height: 900px;
+        width: 550px;
+        background-color: #FFFFFF;
+      }
+
+    </style>
+
+  </head>
+  <body>
+<div class="caculator">
+  <label>caculator</label>
+
+  <input type="text" name="x" required
+        minlength="4" maxlength="8" size="10">
+    <select name="operator">
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="+">+</option>
+        <option value="-">-</option>
+    </select>
+  <input type="text" name="y" required
+        minlength="4" maxlength="8" size="10">
+  <span>=</span>
+  <input type="text" name="result" value="">
+</div>
+  </body>
+</html>
