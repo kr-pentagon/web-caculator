@@ -43,7 +43,7 @@
 <div class="calculator">
   <label>calculator</label>
 
-  <input type="text" name="x" required
+  <input type="text" name="first" required
         minlength="4" maxlength="8" size="10">
     <select name="operator">
         <option value="*">*</option>
@@ -51,11 +51,11 @@
         <option value="+">+</option>
         <option value="-">-</option>
     </select>
-  <input type="text" name="y" required
+  <input type="text" name="second" required
         minlength="4" maxlength="8" size="10">
   <span>=</span>
   <input type="text" name="result" value="">
-  <button onclick="calculate('text')" type="button" name="button" value="caculate">calculate
+  <button onclick="calculate()" type="button" name="button" value="caculate">calculate
 
   </button>
 </div>
